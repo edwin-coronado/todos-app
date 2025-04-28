@@ -1,0 +1,23 @@
+{
+    "name": "x-todos-app",
+    "version": "1.0.0",
+    "description": "Task management",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "dependencies": {
+        "moment": "2.30.1"
+    },
+    "devDependencies": {
+        "@types/moment": "2.13.0",
+        "typescript": "5.5.4",
+        "@servicenow/sdk": "3.0.0",
+        "@servicenow/glide": "26.0.1",
+        "eslint": "8.50.0",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "3.0.0"
+    }
+}

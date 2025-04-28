@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_todos_list" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Todos List - Default view" name="x_snc_todos_list" related_list="NULL" sys_domain="global" view="Default view">383ac8264ff462107b614d94b2ce0b53</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_todos_task.list</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>eric.schroeder</sys_created_by>
+            <sys_created_on>2025-04-11 22:46:26</sys_created_on>
+            <sys_id>343ac8264ff462107b614d94b2ce0b55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>eric.schroeder</sys_updated_by>
+            <sys_updated_on>2025-04-11 22:46:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Todos List - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_todos_list</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>eric.schroeder</sys_created_by>
+            <sys_created_on>2025-04-11 22:46:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>383ac8264ff462107b614d94b2ce0b53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Todos List - Default view</sys_name>
+            <sys_package display_value="Todos App" source="x_snc_todos">e374521a4f1022107b614d94b2ce0bd9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Todos App">e374521a4f1022107b614d94b2ce0bd9</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_todos_list_null</sys_update_name>
+            <sys_updated_by>eric.schroeder</sys_updated_by>
+            <sys_updated_on>2025-04-11 22:46:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
