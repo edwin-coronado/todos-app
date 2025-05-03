@@ -1,3 +1,7 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/table-api.html Table API Reference}
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/concept/columns.html Column Types Reference}
+ */
 import { BooleanColumn, DateTimeColumn, ReferenceColumn, StringColumn, Table } from '@servicenow/sdk/core'
 
 /**

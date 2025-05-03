@@ -1,3 +1,6 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/role-api.html Role API Reference}
+ */
 import { Role } from '@servicenow/sdk/core'
 
 /**

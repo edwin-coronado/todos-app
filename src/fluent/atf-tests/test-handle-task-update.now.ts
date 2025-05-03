@@ -1,3 +1,7 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/test-api.html Test API Reference}
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/automated-testing/concept/automated-test-framework.html ATF Documentation}
+ */
 import { Test } from '@servicenow/sdk/core'
 
 /**

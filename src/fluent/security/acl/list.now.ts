@@ -1,3 +1,6 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
+ */
 import { ACL } from '@servicenow/sdk/core'
 import { x_snc_todos_user } from '../roles/user.now'
 import { CREATED_BY_ME, CREATED_BY_ME_OR_NEW } from '../../../server/constants'

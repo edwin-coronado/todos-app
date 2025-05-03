@@ -1,3 +1,6 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
+ */
 import { Acl } from '@servicenow/sdk/core'
 import { x_snc_todos_admin } from '../roles/admin.now'
 import { ACL } from '@servicenow/sdk/core'

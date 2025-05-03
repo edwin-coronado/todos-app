@@ -1,3 +1,6 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/application-menu-api.html Application Menu API Reference}
+ */
 import { ApplicationMenu, Record } from '@servicenow/sdk/core'
 import { CUSTOM_APPLICATIONS_CATEGORY } from '../../server/constants'
 import { x_snc_todos_user } from '../security/roles/user.now'

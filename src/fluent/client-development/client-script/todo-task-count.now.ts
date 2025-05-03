@@ -1,3 +1,6 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/client-script-api.html Client Script API Reference}
+ */
 import { ClientScript } from "@servicenow/sdk/core";
 
 /**
