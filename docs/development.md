@@ -19,7 +19,7 @@ Before starting development, ensure you have:
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd todos-app-new
+   cd todos-app
    ```
 
 2. **Install Dependencies**

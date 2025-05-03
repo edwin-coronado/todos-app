@@ -1,10 +1,10 @@
 # Todos Application
 
-A task management application built with ServiceNow SDK for organizing and tracking tasks in a structured, hierarchical way.
+A simple task management application built with ServiceNow SDK for organizing and tracking tasks in a structured, hierarchical way.
 
 ## Application Overview
 
-The Todos Application is a comprehensive task management solution built on the ServiceNow platform using the ServiceNow SDK. It provides a structured way to organize and track tasks through categories, lists, and individual task items.
+The Todos Application is built on the ServiceNow platform using the ServiceNow SDK, the Fluent language, and ServiceNow scoped application development.
 
 ### Key Features
 
@@ -34,17 +34,25 @@ The Todos Application is a comprehensive task management solution built on the S
 
 ### Prerequisites
 
-1. **Node.js** - Version 14 or later recommended
-2. **npm** - Usually comes with Node.js
-3. **ServiceNow Instance** - Access to a ServiceNow instance with appropriate permissions
-4. **ServiceNow CLI** - Command-line interface for ServiceNow development
+#### Using the ServiceNow IDE
+1. **ServiceNow Instance** - Access to a ServiceNow instance with admin role and with the [ServiceNow IDE application](https://store.servicenow.com/store/app/281a23e21b246a50a85b16db234bcbea) installed
+
+#### Local development
+1. **ServiceNow Instance** - Access to a ServiceNow instance with admin role
+2. **Node.js** - Version v18.16.1 (npm v8.19.3)
+3. **ServiceNow CLI** - Command-line interface for ServiceNow development
 
 ### Installation Steps
+
+#### Using the ServiceNow IDE
+- Clone this repository in the ServiceNow IDE by following the instructions listed [here](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-ide/task/clone-git-repository-servicenow-ide.html?state=seamless).
+
+#### Local development
 
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd todos-app-new
+   cd todos-app
    ```
 
 2. **Install Dependencies**
@@ -52,20 +60,7 @@ The Todos Application is a comprehensive task management solution built on the S
    npm install
    ```
 
-3. **Configure ServiceNow Connection**
-   
-   Create or update the `.now/credentials.json` file with your ServiceNow instance details:
-   ```json
-   {
-     "instance": {
-       "host": "your-instance.service-now.com",
-       "username": "your-username",
-       "password": "your-password"
-     }
-   }
-   ```
-
-4. **Build and Deploy**
+3. **Build and Deploy**
    ```bash
    npm run build
    npm run deploy
@@ -133,14 +128,6 @@ When a task is reopened (moved from done/canceled to another state):
 - The task is marked as active again
 - Its parent list is also marked as active
 
-### Example Usage Scenario
-
-**Project Management**:
-1. Create a category called "Projects"
-2. For each project, create a list (e.g., "Website Redesign")
-3. Add tasks to each project list (e.g., "Design mockups", "Frontend implementation")
-4. Track progress by updating task states
-5. View completion statistics and durations
 
 ## Documentation
 
@@ -155,6 +142,7 @@ When a task is reopened (moved from done/canceled to another state):
 ### ServiceNow SDK References
 
 - [ServiceNow SDK Documentation](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/concept/servicenow-sdk.html)
+- [ServiceNow SDK CLI Documentation](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/servicenow-sdk-cli-commands.html)
 - [ServiceNow Fluent API Reference](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/servicenow-fluent-api-reference.html)
 - [Table API Reference](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/table-api-now-ts.html)
 - [Business Rule API Reference](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/business-rule-api-now-ts.html)
@@ -190,12 +178,3 @@ The application uses ServiceNow's Automated Test Framework (ATF) for testing:
 4. Tests include setup, actions, verification, and cleanup
 
 For a complete guide to development and testing, see the [Development Guide](./docs/development.md).
-
-## Support and Contribution
-
-For issues, questions, or contributions, please contact the project maintainers or follow the contribution guidelines in the repository.
-
-## License
-
-Proprietary - All rights reserved.
-
