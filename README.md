@@ -23,16 +23,18 @@ The application is built using ServiceNow's Fluent API and consists of:
 
 ## Development Setup
 
-1. Install the ServiceNow CLI and IDE
+### Local Development with ServiceNow CLI
+
+1. Install the ServiceNow CLI
    ```bash
    npm install -g @servicenow/cli
    ```
 
-2. Clone the repository in ServiceNow IDE
-   - Open ServiceNow IDE
-   - Go to File > Clone Git Repository
-   - Enter repository URL
-   - Select workspace location
+2. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd todos-app
+   ```
 
 3. Install dependencies
    ```bash
@@ -46,16 +48,29 @@ The application is built using ServiceNow's Fluent API and consists of:
 
 5. Deploy to your ServiceNow instance
    ```bash
-   npm run deploy
+   npm run install
    ```
+
+### Development with ServiceNow IDE
+
+1. Open ServiceNow IDE
+
+2. Clone the repository
+   - Click on View > Command Palette (or press Cmd/Ctrl + Shift + P)
+   - Type "Git: Clone" and select it
+   - Enter the repository URL
+   - Select a local directory for the repository
+   - If prompted, sign in to your Git provider
+
+3. Build and Deploy
+   - Right-click on the project in the Explorer view
+   - Select "Build Application" to build
+   - Select "Deploy Application" to deploy to your instance
+   - Or use the Command Palette and search for "ServiceNow: Build Application" or "ServiceNow: Deploy Application"
 
 ## Documentation
 
-For more information about ServiceNow Fluent development:
+For more information about ServiceNow development:
 - [ServiceNow SDK Documentation](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/concept/servicenow-sdk-landing.html)
 - [ServiceNow Fluent API Reference](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/servicenow-fluent-api-reference.html)
 - [ServiceNow IDE Guide](https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-ide/concept/servicenow-ide-landing.html)
-
-## License
-
-UNLICENSED

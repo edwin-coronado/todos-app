@@ -5,7 +5,7 @@
     "license": "UNLICENSED",
     "scripts": {
         "build": "now-sdk build",
-        "deploy": "now-sdk install",
+        "install": "now-sdk install",
         "transform": "now-sdk transform",
         "types": "now-sdk dependencies"
     },
