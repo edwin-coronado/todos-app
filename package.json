@@ -15,9 +15,9 @@
     "devDependencies": {
         "@types/moment": "2.13.0",
         "typescript": "5.5.4",
-        "@servicenow/sdk": "3.0.0",
+        "@servicenow/sdk": "3.0.1",
         "@servicenow/glide": "26.0.1",
         "eslint": "8.50.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "3.0.0"
+        "@servicenow/eslint-plugin-sdk-app-plugin": "3.0.1"
     }
 }
