@@ -1,5 +1,13 @@
+/**
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/table-api.html Table API Reference}
+ * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/concept/columns.html Column Types Reference}
+ */
 import { Record, StringColumn, Table } from '@servicenow/sdk/core'
 
+/**
+ * Defines the Category table structure for organizing todo lists
+ * Categories provide a way to group related lists (e.g., Work, Personal, etc.)
+ */
 export const x_snc_todos_category = Table({
     name: 'x_snc_todos_category',
     schema: {
@@ -9,7 +17,9 @@ export const x_snc_todos_category = Table({
     index: [{"name":"index","element":"name","unique":true}]
 })
 
-//Default categories
+// Default categories provided with the application installation
+// These are marked as demo data and will be installed during app deployment
+
 Record({
     $id: Now.ID['work-category'],
     table: 'x_snc_todos_category',
