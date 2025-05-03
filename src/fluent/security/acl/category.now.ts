@@ -3,7 +3,6 @@
  */
 import { Acl } from '@servicenow/sdk/core'
 import { x_snc_todos_admin } from '../roles/admin.now'
-import { ACL } from '@servicenow/sdk/core'
 import { x_snc_todos_user } from '../roles/user.now'
 
 Acl({
@@ -19,7 +18,7 @@ Acl({
     operation: "read",
     type: "record",
     table: "x_snc_todos_category",
-    roles: [x_snc_todos_admin],
+    roles: [x_snc_todos_admin, x_snc_todos_user],
 })
 
 Acl({
@@ -36,16 +35,4 @@ Acl({
     type: "record",
     table: "x_snc_todos_category",
     roles: [x_snc_todos_admin]
-})
-
-/**
- * Access Control List (ACL) rules for the Category table
- * Categories are read-only for regular users, as they are managed by administrators
- * All users can view categories to organize their lists
- */
-export const x_snc_todos_category_acl = ACL({
-    $id: Now.ID['category-read-acl'],
-    operation: "read",
-    table: "x_snc_todos_category",
-    roles: [x_snc_todos_user]
 })

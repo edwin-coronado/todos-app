@@ -12,7 +12,7 @@ import { Role } from '@servicenow/sdk/core'
  */
 export const x_snc_todos_user = Role({
     $id: Now.ID['x_snc_todos_user'],
-    name: 'x_snc_todos_user',
+    name: 'x_snc_todos.user',
     description: 'User of the Todos application',
     assigns_to: ['user'],
     elevates_privilege: false,

@@ -1,7 +1,7 @@
 /**
  * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
  */
-import { ACL } from '@servicenow/sdk/core'
+import { Acl } from '@servicenow/sdk/core'
 import { x_snc_todos_user } from '../roles/user.now'
 import { CREATED_BY_ME } from '../../../server/constants'
 
@@ -10,27 +10,30 @@ import { CREATED_BY_ME } from '../../../server/constants'
  * Defines who can read, write, create, and delete tasks
  * Tasks inherit ownership from their parent list
  */
-export const x_snc_todos_task_acl = ACL({
+export const x_snc_todos_task_acl = Acl({
     $id: Now.ID['task-acl'],
     operation: "create",
     table: "x_snc_todos_task",
-    roles: [x_snc_todos_user]
+    roles: [x_snc_todos_user],
+    type: 'record'
 })
 
 // Allow users to read their own tasks
-ACL({
+Acl({
     $id: Now.ID['task-read-acl'],
     operation: "read",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME
+    condition: CREATED_BY_ME,
+    type: 'record'
 })
 
 // Allow users to update their own tasks
-ACL({
+Acl({
     $id: Now.ID['task-write-acl'],
     operation: "write",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME
+    condition: CREATED_BY_ME,
+    type: 'record'
 })

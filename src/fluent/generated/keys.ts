@@ -13,42 +13,6 @@ declare global {
                             "table": "sys_user_role",
                             "id": "de2e802c8a50401383bbac5b99f32465"
                         },
-                        "user_role": {
-                            "table": "sys_user_role",
-                            "id": "a2e336209fd343b697d82a081cf58ce1"
-                        },
-                        "list_create_acl": {
-                            "table": "sys_security_acl",
-                            "id": "8c86ee2882c5440bab17a572de273d31"
-                        },
-                        "list_read_acl": {
-                            "table": "sys_security_acl",
-                            "id": "833ab130927e489e9596fd4fc6246294"
-                        },
-                        "list_write_acl": {
-                            "table": "sys_security_acl",
-                            "id": "c4d5016d41134d0e97b7e0dc763a541d"
-                        },
-                        "list_delete_acl": {
-                            "table": "sys_security_acl",
-                            "id": "a9dd9710b35b4470bcfad36d5582dbab"
-                        },
-                        "task_create_acl": {
-                            "table": "sys_security_acl",
-                            "id": "951e3d2e6ab34f158de6fd7eed09bc95"
-                        },
-                        "task_read_acl": {
-                            "table": "sys_security_acl",
-                            "id": "e066b1faa3c7428296832f4b7ba885ec"
-                        },
-                        "task_write_acl": {
-                            "table": "sys_security_acl",
-                            "id": "321fb35e57a74e0db40e612cf3a89cf0"
-                        },
-                        "task_delete_acl": {
-                            "table": "sys_security_acl",
-                            "id": "a03a3304bc9f411a832501d686e0b859"
-                        },
                         "category_create_acl": {
                             "table": "sys_security_acl",
                             "id": "a989484d39464d389206a1ba381deff5"
@@ -368,73 +332,41 @@ declare global {
                         "set-scratchpad-br": {
                             "table": "sys_script",
                             "id": "e84435d454cf4f50bedcbb1615e08cab"
+                        },
+                        "x_snc_todos_user": {
+                            "table": "sys_user_role",
+                            "id": "8d8abbaa4b6545f6b7b3dba70d2330cd"
+                        },
+                        "list-acl": {
+                            "table": "sys_security_acl",
+                            "id": "b5c00ed1d9444d129b4f4fc150c17f31"
+                        },
+                        "list-read-acl": {
+                            "table": "sys_security_acl",
+                            "id": "9baf20c4e98c4f109d98baa9f200a7e7"
+                        },
+                        "list-write-acl": {
+                            "table": "sys_security_acl",
+                            "id": "c9a709ac7b9a458bab1ffc77f7580df0"
+                        },
+                        "list-delete-acl": {
+                            "table": "sys_security_acl",
+                            "id": "f4bf34279a4041bdac450dc496166691"
+                        },
+                        "task-acl": {
+                            "table": "sys_security_acl",
+                            "id": "3237fcbb7ebc4e21b7079bb8ef2bc04d"
+                        },
+                        "task-read-acl": {
+                            "table": "sys_security_acl",
+                            "id": "dbc9cca3973b47058f5a86290b8f68b0"
+                        },
+                        "task-write-acl": {
+                            "table": "sys_security_acl",
+                            "id": "f1895b926683400aaad45a83d8bab892"
                         }
                     };
                 composite: [
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "f91db4c7526d409999e60e46a30b01a4",
-                            "key": {
-                                "sys_security_acl": "list_create_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "e614e4e6bdbe484a816fb1e3b3a702ab",
-                            "key": {
-                                "sys_security_acl": "list_read_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "1e37d227c28c4f46b27097a8494f6dd2",
-                            "key": {
-                                "sys_security_acl": "list_write_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "3e02b2df066b4c0a8dadab2e7dcf6537",
-                            "key": {
-                                "sys_security_acl": "list_delete_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "230f8e81722f40218da108e59e238bf6",
-                            "key": {
-                                "sys_security_acl": "task_create_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "08271537cbe3481884875edc5826343c",
-                            "key": {
-                                "sys_security_acl": "task_read_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "f8e0cb2587384fc4b6cfdb619d021d22",
-                            "key": {
-                                "sys_security_acl": "task_write_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "a97f1cd19109428fbe7fc5f1ff99642c",
-                            "key": {
-                                "sys_security_acl": "task_delete_acl",
-                                "sys_user_role": "user_role"
-                            }
-                        },
                         {
                             "table": "sys_security_acl_role",
                             "id": "8f870766a37448349d39994fa8539002",
@@ -465,30 +397,6 @@ declare global {
                             "key": {
                                 "sys_security_acl": "category_delete_acl",
                                 "sys_user_role": "admin_role"
-                            }
-                        },
-                        {
-                            "table": "sys_user_role_contains",
-                            "id": "4cd533ae31814e4b9168e88a1e8af7dc",
-                            "key": {
-                                "role": "de2e802c8a50401383bbac5b99f32465",
-                                "contains": "a2e336209fd343b697d82a081cf58ce1"
-                            }
-                        },
-                        {
-                            "table": "sys_user_role_contains",
-                            "id": "4cd533ae31814e4b9168e88a1e8af7dc",
-                            "key": {
-                                "role": "user_role",
-                                "contains": "a2e336209fd343b697d82a081cf58ce1"
-                            }
-                        },
-                        {
-                            "table": "sys_user_role_contains",
-                            "id": "a920729a60234d9abbd0874d3d88413a",
-                            "key": {
-                                "role": "a2e336209fd343b697d82a081cf58ce1",
-                                "contains": "a2e336209fd343b697d82a081cf58ce1"
                             }
                         },
                         {
@@ -658,9 +566,109 @@ declare global {
                                 "list": "d88ac0664ff462107b614d94b2ce0b4f",
                                 "element": "sys_created_on"
                             }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "b8fb26248c634535980f04d86a42191e",
+                            "key": {
+                                "sys_security_acl": "category_read_acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "ecf31e2b56e8491bb3f8173da93dfd1a",
+                            "key": {
+                                "sys_security_acl": "list-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "c2db6114955548eb91084e5d81459beb",
+                            "key": {
+                                "sys_security_acl": "list-read-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "9a74543f3b3b4cd287906a1a8a9162c6",
+                            "key": {
+                                "sys_security_acl": "list-write-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "20b3fa57ce4c46f789b810d1c2c67cd7",
+                            "key": {
+                                "sys_security_acl": "list-delete-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "bba2e5206bb8476b90efa1916cb5ef14",
+                            "key": {
+                                "sys_security_acl": "task-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "449fe2ffa27a437b9cd96639564464ad",
+                            "key": {
+                                "sys_security_acl": "task-read-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "97a46ae9df654c75bceb7c1311d6e4a2",
+                            "key": {
+                                "sys_security_acl": "task-write-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
+                        },
+                        {
+                            "table": "sys_user_role_contains",
+                            "id": "f44e781c986d47e4a80271da10ed9662",
+                            "key": {
+                                "role": "de2e802c8a50401383bbac5b99f32465",
+                                "contains": "8d8abbaa4b6545f6b7b3dba70d2330cd"
+                            }
                         }
                     ];
                 deleted: {
+                        "sys_user_role": [
+                            "a2e336209fd343b697d82a081cf58ce1"
+                        ],
+                        "sys_security_acl": [
+                            "8c86ee2882c5440bab17a572de273d31",
+                            "833ab130927e489e9596fd4fc6246294",
+                            "c4d5016d41134d0e97b7e0dc763a541d",
+                            "a9dd9710b35b4470bcfad36d5582dbab",
+                            "951e3d2e6ab34f158de6fd7eed09bc95",
+                            "e066b1faa3c7428296832f4b7ba885ec",
+                            "321fb35e57a74e0db40e612cf3a89cf0",
+                            "a03a3304bc9f411a832501d686e0b859"
+                        ],
+                        "sys_security_acl_role": [
+                            "f91db4c7526d409999e60e46a30b01a4",
+                            "e614e4e6bdbe484a816fb1e3b3a702ab",
+                            "1e37d227c28c4f46b27097a8494f6dd2",
+                            "3e02b2df066b4c0a8dadab2e7dcf6537",
+                            "230f8e81722f40218da108e59e238bf6",
+                            "08271537cbe3481884875edc5826343c",
+                            "f8e0cb2587384fc4b6cfdb619d021d22",
+                            "a97f1cd19109428fbe7fc5f1ff99642c"
+                        ],
+                        "sys_user_role_contains": [
+                            "4cd533ae31814e4b9168e88a1e8af7dc",
+                            "4cd533ae31814e4b9168e88a1e8af7dc",
+                            "a920729a60234d9abbd0874d3d88413a"
+                        ],
                         "sys_module": [
                             "6f2f2c3ff1e443e6b05270e1480e33cb",
                             "bdc4be3412a34a6cb3ab6acb489d900b",
