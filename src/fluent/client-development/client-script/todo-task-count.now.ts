@@ -1,5 +1,10 @@
 import { ClientScript } from "@servicenow/sdk/core";
 
+/**
+ * Client script that runs when loading a list record
+ * Displays a summary of tasks in the list and their current states
+ * Uses scratchpad data set by a corresponding server script
+ */
 export default ClientScript({
     $id: "2bd9bd5e4fc562107b614d94b2ce0be3",
     type:"onLoad",

@@ -1,37 +1,41 @@
-import { Acl } from '@servicenow/sdk/core'
-import { CREATED_BY_ME, CREATED_BY_ME_OR_NEW } from '../../../server/constants'
+import { ACL } from '@servicenow/sdk/core'
 import { x_snc_todos_user } from '../roles/user.now'
+import { CREATED_BY_ME, CREATED_BY_ME_OR_NEW } from '../../../server/constants'
 
-Acl({
-    $id: Now.ID['list_create_acl'],
+/**
+ * Access Control List (ACL) rules for the List table
+ * Defines who can read, write, create, and delete lists
+ * Uses CREATED_BY_ME condition to restrict users to their own lists
+ */
+export const x_snc_todos_list_acl = ACL({
+    $id: Now.ID['list-acl'],
     operation: "create",
-    type: "record",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user]
 })
 
-Acl({
-    $id: Now.ID['list_read_acl'],
+// Allow users to read their own lists
+ACL({
+    $id: Now.ID['list-read-acl'],
     operation: "read",
-    type: "record",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
     condition: CREATED_BY_ME
 })
 
-Acl({
-    $id: Now.ID['list_write_acl'],
+// Allow users to update their own lists
+ACL({
+    $id: Now.ID['list-write-acl'],
     operation: "write",
-    type: "record",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
     condition: CREATED_BY_ME_OR_NEW
 })
 
-Acl({
-    $id: Now.ID['list_delete_acl'],
+// Allow users to delete their own lists
+ACL({
+    $id: Now.ID['list-delete-acl'],
     operation: "delete",
-    type: "record",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
     condition: CREATED_BY_ME
