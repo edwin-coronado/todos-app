@@ -3,7 +3,7 @@
  */
 import { Acl } from '@servicenow/sdk/core'
 import { x_snc_todos_user } from '../roles/user.now'
-import { CREATED_BY_ME } from '../../../server/constants'
+import { recordCreatedByMe, recordCreatedByMeOrNew } from '../../../server/utils'
 
 /**
  * Access Control List (ACL) rules for the Task table
@@ -24,7 +24,7 @@ Acl({
     operation: "read",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMe,
     type: 'record'
 })
 
@@ -34,6 +34,6 @@ Acl({
     operation: "write",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })

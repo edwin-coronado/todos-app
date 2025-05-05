@@ -364,6 +364,14 @@ declare global {
                         "task-write-acl": {
                             "table": "sys_security_acl",
                             "id": "f1895b926683400aaad45a83d8bab892"
+                        },
+                        "src_server_task-utils_ts": {
+                            "table": "sys_module",
+                            "id": "e91f16949c884fca8d0b84171f69aa11"
+                        },
+                        "src_server_list-utils_ts": {
+                            "table": "sys_module",
+                            "id": "6eca695c1e6d42e1b534f8c2fbc3cffe"
                         }
                     };
                 composite: [
