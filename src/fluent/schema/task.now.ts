@@ -65,5 +65,6 @@ export const x_snc_todos_task = Table({
             }
         })
     },
-    label: "Todos Task"
+    label: "Todos Task",
+    index: [{"name":"index","element":"list","unique":false}]
 })

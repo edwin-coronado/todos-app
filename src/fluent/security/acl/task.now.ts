@@ -2,8 +2,8 @@
  * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
  */
 import { Acl } from '@servicenow/sdk/core'
-import { x_snc_todos_user } from '../roles/user.now'
 import { recordCreatedByMe, recordCreatedByMeOrNew } from '../../../server/utils'
+import { x_snc_todos_user } from '../roles/user.now'
 
 /**
  * Access Control List (ACL) rules for the Task table
