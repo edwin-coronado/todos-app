@@ -1,5 +1,5 @@
 import { GlideDateTime, GlideRecord } from '@servicenow/glide';
-import { grToTask, Task } from './task-utils'
+import { grToTask, Task } from './task-utils.ts'
 
 export function openList(sysId: string) {
   const list = new GlideRecord('x_snc_todos_list');

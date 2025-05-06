@@ -6,7 +6,9 @@
         "target": "es2021",
         "moduleResolution": "nodenext",
         "allowJs": true,
-        "declaration": false,
+        "allowImportingTsExtensions": true,
+        "emitDeclarationOnly": true,
+        "declaration": true,
         "sourceMap": false,
         "skipLibCheck": true
     },

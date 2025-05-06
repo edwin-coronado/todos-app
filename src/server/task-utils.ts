@@ -1,5 +1,5 @@
 import { GlideDateTime, GlideRecord } from '@servicenow/glide';
-import { getTasksInList, closeList, openList } from './list-utils';
+import { getTasksInList, closeList, openList } from './list-utils.ts';
 import moment from 'moment';
 
 export type Task = {
