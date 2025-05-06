@@ -24,7 +24,7 @@ Acl({
     operation: "read",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
-    script: recordCreatedByMe,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })
 

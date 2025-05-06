@@ -372,6 +372,10 @@ declare global {
                         "src_server_list-utils_ts": {
                             "table": "sys_module",
                             "id": "6eca695c1e6d42e1b534f8c2fbc3cffe"
+                        },
+                        "task-delete-acl": {
+                            "table": "sys_security_acl",
+                            "id": "bce6767429af4ec59420767c5c1f5d8d"
                         }
                     };
                 composite: [
@@ -645,6 +649,14 @@ declare global {
                             "key": {
                                 "list": "d88ac0664ff462107b614d94b2ce0b4f",
                                 "element": "sys_created_on"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "fabf8804943545949291f07b69f03cd3",
+                            "key": {
+                                "sys_security_acl": "task-delete-acl",
+                                "sys_user_role": "x_snc_todos_user"
                             }
                         }
                     ];

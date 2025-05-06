@@ -24,7 +24,7 @@ Acl({
     operation: "read",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    script: recordCreatedByMe,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })
 
@@ -36,4 +36,13 @@ Acl({
     roles: [x_snc_todos_user],
     script: recordCreatedByMeOrNew,
     type: 'record'
+})
+
+Acl({
+    $id: Now.ID['task-delete-acl'],
+    operation: "delete",
+    table: "x_snc_todos_task",
+    roles: [x_snc_todos_user],
+    type: 'record',
+    script: recordCreatedByMe
 })
