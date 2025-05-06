@@ -502,6 +502,150 @@ declare global {
                                 "role": "de2e802c8a50401383bbac5b99f32465",
                                 "contains": "8d8abbaa4b6545f6b7b3dba70d2330cd"
                             }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "9cf3e20db87c437fa9b21bb275919820",
+                            "key": {
+                                "list": "da4739004f4122107b614d94b2ce0be9",
+                                "element": "name"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "aa68c4e68f174897b17898d20fa294ff",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "name"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "42c3103fc69e4c0298aff8c7f8ec4364",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "active"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "1e53a54996a3415ab1c83d84a6a3dbab",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "category"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "e9f21335f1a748069a7acb163e50e13f",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "description"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "035484c6122d47fea09c3bff7dbeea71",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "title"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "9d77c324e3ba47efb24c409efd35e9b9",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "state"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "d330e073442a46cba1945ee06d88016b",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "active"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "ddbfec90ee514bfcbeab0da1c7be4ea9",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "closed_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "af1e622fe6df46849af52e4b15fedd36",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "list"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "17388a40b63f47f9938b8cdd5df7b699",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "list.category"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "460d0ec4dd2b40898b476d7f21f59c13",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "order"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "345e13bf07da444aa05732a79b048493",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "sys_created_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "7cddeb2fe6b44296b2fb33e474554038",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "sys_updated_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "900399f27f9a4f609813b7f28cd41884",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "title"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "afbd5fe79a114fa7b93fa440486cb5ed",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "state"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "3c9ca0d38cdc44c4a1058506b655502b",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "order"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "46cc90d860994e0cbb28b721edea2a3f",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "sys_created_on"
+                            }
                         }
                     ];
                 deleted: {

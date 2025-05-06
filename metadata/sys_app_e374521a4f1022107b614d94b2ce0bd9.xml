@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_app">
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <can_edit_in_studio>true</can_edit_in_studio>
@@ -16,7 +17,7 @@
         <logo/>
         <menu/>
         <name>Todos App</name>
-        <package_json display_value="x_snc_todos/x-todos-app/1.0.0/package.json" path="x_snc_todos/x-todos-app/1.0.0/package.json">x_snc_todos/x-todos-app/1.0.0/package.json</package_json>
+        <package_json>x_snc_todos/x-todos-app/1.0.0/package.json</package_json>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
