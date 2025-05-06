@@ -25,7 +25,8 @@ export const x_snc_todos_task = Table({
             mandatory: true,
             attributes: {
                 encode_utf8: false
-            }
+            },
+            cascadeRule: 'delete'
         }),
 
         // State tracking
@@ -64,5 +65,6 @@ export const x_snc_todos_task = Table({
             }
         })
     },
-    label: "Todos Task"
+    label: "Todos Task",
+    index: [{"name":"index","element":"list","unique":false}]
 })

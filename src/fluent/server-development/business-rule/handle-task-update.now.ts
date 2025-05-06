@@ -2,7 +2,7 @@
  * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/business-rule-api.html Business Rule API Reference}
  */
 import { BusinessRule } from '@servicenow/sdk/core'
-import { handleTaskUpdate } from '../../../server/utils'
+import { handleTaskUpdate } from '../../../server/task-utils'
 
 /**
  * Business rule that handles task state changes

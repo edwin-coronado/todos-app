@@ -2,8 +2,8 @@
  * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
  */
 import { Acl } from '@servicenow/sdk/core'
+import { recordCreatedByMe, recordCreatedByMeOrNew } from '../../../server/utils'
 import { x_snc_todos_user } from '../roles/user.now'
-import { CREATED_BY_ME } from '../../../server/constants'
 
 /**
  * Access Control List (ACL) rules for the Task table
@@ -24,7 +24,7 @@ Acl({
     operation: "read",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })
 
@@ -34,6 +34,15 @@ Acl({
     operation: "write",
     table: "x_snc_todos_task",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMeOrNew,
     type: 'record'
+})
+
+Acl({
+    $id: Now.ID['task-delete-acl'],
+    operation: "delete",
+    table: "x_snc_todos_task",
+    roles: [x_snc_todos_user],
+    type: 'record',
+    script: recordCreatedByMe
 })

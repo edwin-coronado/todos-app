@@ -2,13 +2,13 @@
  * @see {@link https://www.servicenow.com/docs/bundle/yokohama-application-development/page/build/servicenow-sdk/reference/acl-api.html ACL API Reference}
  */
 import { Acl } from '@servicenow/sdk/core'
+import { recordCreatedByMe, recordCreatedByMeOrNew } from '../../../server/utils'
 import { x_snc_todos_user } from '../roles/user.now'
-import { CREATED_BY_ME, CREATED_BY_ME_OR_NEW } from '../../../server/constants'
 
 /**
  * Access Control List (ACL) rules for the List table
  * Defines who can read, write, create, and delete lists
- * Uses CREATED_BY_ME condition to restrict users to their own lists
+ * Uses recordCreatedByMe or recordCreatedByMeOrNew scripts to restrict users to their own lists
  */
 export const x_snc_todos_list_acl = Acl({
     $id: Now.ID['list-acl'],
@@ -24,7 +24,7 @@ Acl({
     operation: "read",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })
 
@@ -34,7 +34,7 @@ Acl({
     operation: "write",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME_OR_NEW,
+    script: recordCreatedByMeOrNew,
     type: 'record'
 })
 
@@ -44,6 +44,6 @@ Acl({
     operation: "delete",
     table: "x_snc_todos_list",
     roles: [x_snc_todos_user],
-    condition: CREATED_BY_ME,
+    script: recordCreatedByMe,
     type: 'record'
 })

@@ -364,6 +364,18 @@ declare global {
                         "task-write-acl": {
                             "table": "sys_security_acl",
                             "id": "f1895b926683400aaad45a83d8bab892"
+                        },
+                        "src_server_task-utils_ts": {
+                            "table": "sys_module",
+                            "id": "e91f16949c884fca8d0b84171f69aa11"
+                        },
+                        "src_server_list-utils_ts": {
+                            "table": "sys_module",
+                            "id": "6eca695c1e6d42e1b534f8c2fbc3cffe"
+                        },
+                        "task-delete-acl": {
+                            "table": "sys_security_acl",
+                            "id": "bce6767429af4ec59420767c5c1f5d8d"
                         }
                     };
                 composite: [
@@ -421,150 +433,6 @@ declare global {
                             "key": {
                                 "module": "moment@2.30.1",
                                 "file": "package.json"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "e7fc3a68f45746f0899a9a7609294fe8",
-                            "key": {
-                                "list": "da4739004f4122107b614d94b2ce0be9",
-                                "element": "name"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "f0726d478cf34a16b7be6381c0f0f47f",
-                            "key": {
-                                "list": "53abf90e4ff422107b614d94b2ce0b18",
-                                "element": "name"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "0d69850b9ca34f7aa7b6625a4c729224",
-                            "key": {
-                                "list": "53abf90e4ff422107b614d94b2ce0b18",
-                                "element": "active"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "4bf61d90b18f4073a74a352bef83cfcc",
-                            "key": {
-                                "list": "53abf90e4ff422107b614d94b2ce0b18",
-                                "element": "category"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "a352453c86e04de8830ade9bedf73e1a",
-                            "key": {
-                                "list": "53abf90e4ff422107b614d94b2ce0b18",
-                                "element": "description"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "7f2cc479da324c4c8feb0967ce37f979",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "title"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "ef78b9d8c3d349d6a2935057205368ca",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "state"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "45a5d80463424e52be3a60c58ac4620d",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "active"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "9b30ebaf75a94042b6fd048301f588ae",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "closed_on"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "1283016810844bb0b00cc39b49bf37f5",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "list"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "69e8f24d746440839e0f474926148f2f",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "list.category"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "39eae8059350409298046526a53f27da",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "order"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "2fc3dce626304267ad48d42c5b8bd17c",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "sys_created_on"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "d77d7fa86ee845d6b14e4a984562f7b0",
-                            "key": {
-                                "list": "a3777d004f4122107b614d94b2ce0b48",
-                                "element": "sys_updated_on"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "9bd363a4c31248fd9e9b16e64c45de6c",
-                            "key": {
-                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
-                                "element": "title"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "d6b7951f91414246886ec88174f3b6a6",
-                            "key": {
-                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
-                                "element": "state"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "f35374a645c844e1b393827f68f4a31d",
-                            "key": {
-                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
-                                "element": "order"
-                            }
-                        },
-                        {
-                            "table": "sys_ui_list_element",
-                            "id": "cacfec1e37af445b82643bf01aac3b44",
-                            "key": {
-                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
-                                "element": "sys_created_on"
                             }
                         },
                         {
@@ -638,9 +506,210 @@ declare global {
                                 "role": "de2e802c8a50401383bbac5b99f32465",
                                 "contains": "8d8abbaa4b6545f6b7b3dba70d2330cd"
                             }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "9cf3e20db87c437fa9b21bb275919820",
+                            "key": {
+                                "list": "da4739004f4122107b614d94b2ce0be9",
+                                "element": "name"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "aa68c4e68f174897b17898d20fa294ff",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "name"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "42c3103fc69e4c0298aff8c7f8ec4364",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "active"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "1e53a54996a3415ab1c83d84a6a3dbab",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "category"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "e9f21335f1a748069a7acb163e50e13f",
+                            "key": {
+                                "list": "53abf90e4ff422107b614d94b2ce0b18",
+                                "element": "description"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "035484c6122d47fea09c3bff7dbeea71",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "title"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "9d77c324e3ba47efb24c409efd35e9b9",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "state"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "d330e073442a46cba1945ee06d88016b",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "active"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "ddbfec90ee514bfcbeab0da1c7be4ea9",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "closed_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "af1e622fe6df46849af52e4b15fedd36",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "list"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "17388a40b63f47f9938b8cdd5df7b699",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "list.category"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "460d0ec4dd2b40898b476d7f21f59c13",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "order"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "345e13bf07da444aa05732a79b048493",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "sys_created_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "7cddeb2fe6b44296b2fb33e474554038",
+                            "key": {
+                                "list": "a3777d004f4122107b614d94b2ce0b48",
+                                "element": "sys_updated_on"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "900399f27f9a4f609813b7f28cd41884",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "title"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "afbd5fe79a114fa7b93fa440486cb5ed",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "state"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "3c9ca0d38cdc44c4a1058506b655502b",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "order"
+                            }
+                        },
+                        {
+                            "table": "sys_ui_list_element",
+                            "id": "46cc90d860994e0cbb28b721edea2a3f",
+                            "key": {
+                                "list": "d88ac0664ff462107b614d94b2ce0b4f",
+                                "element": "sys_created_on"
+                            }
+                        },
+                        {
+                            "table": "sys_security_acl_role",
+                            "id": "fabf8804943545949291f07b69f03cd3",
+                            "key": {
+                                "sys_security_acl": "task-delete-acl",
+                                "sys_user_role": "x_snc_todos_user"
+                            }
                         }
                     ];
                 deleted: {
+                        "sys_ui_list_element": [
+                            "e7fc3a68f45746f0899a9a7609294fe8",
+                            "f0726d478cf34a16b7be6381c0f0f47f",
+                            "0d69850b9ca34f7aa7b6625a4c729224",
+                            "4bf61d90b18f4073a74a352bef83cfcc",
+                            "a352453c86e04de8830ade9bedf73e1a",
+                            "7f2cc479da324c4c8feb0967ce37f979",
+                            "ef78b9d8c3d349d6a2935057205368ca",
+                            "45a5d80463424e52be3a60c58ac4620d",
+                            "9b30ebaf75a94042b6fd048301f588ae",
+                            "1283016810844bb0b00cc39b49bf37f5",
+                            "69e8f24d746440839e0f474926148f2f",
+                            "39eae8059350409298046526a53f27da",
+                            "2fc3dce626304267ad48d42c5b8bd17c",
+                            "d77d7fa86ee845d6b14e4a984562f7b0",
+                            "9bd363a4c31248fd9e9b16e64c45de6c",
+                            "d6b7951f91414246886ec88174f3b6a6",
+                            "f35374a645c844e1b393827f68f4a31d",
+                            "cacfec1e37af445b82643bf01aac3b44",
+                            "48104d23184d4bccb3b07dc7b4dcd3c6",
+                            "9ff20a5edd974a5c902550b3e8331dd6",
+                            "d212910db4c84b6f8711f76f672698c7",
+                            "159a019d733149fbb117312898e29d8d",
+                            "5a2311b8d34b441a82cc8127afa0dc8c",
+                            "d9cc730f3b4049b7ab3bd20772d551a4",
+                            "3558a99d581c493d9f47ee01b50aa3e8",
+                            "b473206c8199489fada1b6209bdaf720",
+                            "7585895b8abc4eb7badd1e5a04d8ef0d",
+                            "6139dace24b141b8872020a00c61dabb",
+                            "badc3ee77c6e44c0b1c7fda4491c0715",
+                            "f779fe5d36cd48079bb1759af15872ed",
+                            "ffe506b4761943d79aafec51a0a959ad",
+                            "80ee2c5b8dbc451786291d0723ab22d8",
+                            "a016b299c5554085b298235869cf74be",
+                            "765e07c0f3694ce986efc9939314a6cd",
+                            "1f814dab5a2b429da40de7016021257d",
+                            "0bcbf72d9edc47da95d141595356895c",
+                            "8e094c172ff5468a93334d13fff8d200",
+                            "57cef58038264c6db53645c1b5d78da2",
+                            "5068ffac7abb4625b767e703ecebd16a",
+                            "76d22646abe54b31a3aa2b47213a1e7f",
+                            "bf788f095bc445d4a46e5ee9210cf519",
+                            "68b6c5ac00424d47919dac0e0bfcf630",
+                            "aa720d8338a74e1da017fa5d2564c3a5",
+                            "79063117dd0a4592a4205c74e24653ed",
+                            "65a03706ee9c44be90d6af4deb593f18",
+                            "367736652dac465fa709039cae799ff2",
+                            "fd6c58df7e324c28a0a25dae2a780955"
+                        ],
                         "sys_user_role": [
                             "a2e336209fd343b697d82a081cf58ce1"
                         ],
@@ -674,37 +743,6 @@ declare global {
                             "bdc4be3412a34a6cb3ab6acb489d900b",
                             "b17dbf5474c5449189d34344cfdffe2f",
                             "a4a5f0f835d243beade9a0a7c78f518b"
-                        ],
-                        "sys_ui_list_element": [
-                            "48104d23184d4bccb3b07dc7b4dcd3c6",
-                            "9ff20a5edd974a5c902550b3e8331dd6",
-                            "d212910db4c84b6f8711f76f672698c7",
-                            "159a019d733149fbb117312898e29d8d",
-                            "5a2311b8d34b441a82cc8127afa0dc8c",
-                            "d9cc730f3b4049b7ab3bd20772d551a4",
-                            "3558a99d581c493d9f47ee01b50aa3e8",
-                            "b473206c8199489fada1b6209bdaf720",
-                            "7585895b8abc4eb7badd1e5a04d8ef0d",
-                            "6139dace24b141b8872020a00c61dabb",
-                            "badc3ee77c6e44c0b1c7fda4491c0715",
-                            "f779fe5d36cd48079bb1759af15872ed",
-                            "ffe506b4761943d79aafec51a0a959ad",
-                            "80ee2c5b8dbc451786291d0723ab22d8",
-                            "a016b299c5554085b298235869cf74be",
-                            "765e07c0f3694ce986efc9939314a6cd",
-                            "1f814dab5a2b429da40de7016021257d",
-                            "0bcbf72d9edc47da95d141595356895c",
-                            "8e094c172ff5468a93334d13fff8d200",
-                            "57cef58038264c6db53645c1b5d78da2",
-                            "5068ffac7abb4625b767e703ecebd16a",
-                            "76d22646abe54b31a3aa2b47213a1e7f",
-                            "bf788f095bc445d4a46e5ee9210cf519",
-                            "68b6c5ac00424d47919dac0e0bfcf630",
-                            "aa720d8338a74e1da017fa5d2564c3a5",
-                            "79063117dd0a4592a4205c74e24653ed",
-                            "65a03706ee9c44be90d6af4deb593f18",
-                            "367736652dac465fa709039cae799ff2",
-                            "fd6c58df7e324c28a0a25dae2a780955"
                         ]
                     };
             }
