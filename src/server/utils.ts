@@ -1,7 +1,7 @@
 import { GlideRecord, gs } from '@servicenow/glide';
 
 export function recordCreatedByMe(record: GlideRecord): boolean {
-    return gs.getUser().getID() === record.getValue('sys_created_by');
+    return gs.getUserName() === record.getValue('sys_created_by');
 
 }
 
